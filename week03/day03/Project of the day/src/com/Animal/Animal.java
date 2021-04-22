@@ -2,8 +2,8 @@ package com.Animal;
 
 public class Animal {
 
-  int hunger;
-  int thirst;
+  int hunger = 50;
+  int thirst = 50;
   boolean playing;
 
   Animal() {}
@@ -11,8 +11,6 @@ public class Animal {
   Animal(int hunger, int thirst) {
     this.hunger = hunger;
     this.thirst = thirst;
-    hunger = 50;
-    thirst = 50;
   }
 
   public void eat() {
