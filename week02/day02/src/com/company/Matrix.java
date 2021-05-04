@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix {
@@ -18,14 +17,20 @@ public class Matrix {
     //   Its length should depend on a variable
     //
     // - Print this two dimensional array to the output
-    int[][] matrix = new int[4][];
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a number to indicate your matrix's size.");
+    int matrixSize = scanner.nextInt();
 
-    for (int row = 0; row < matrix.length; row++) {
-      for (int column = 0; column < matrix[3].length; row++, column++) {
-        matrix[row][column] += 1;
+    int[][] matrix = new int[matrixSize][matrixSize];
+
+    for (int i = 0; i < matrixSize; i++) {
+      for (int j = 0; j < matrixSize; j++) {
+        if (i == j) {
+          matrix[i][j] = 1;
+        }
+        System.out.print(matrix[i][j] + " ");
       }
+      System.out.println();
     }
-
-    System.out.println(Arrays.deepToString(matrix));
   }
 }
