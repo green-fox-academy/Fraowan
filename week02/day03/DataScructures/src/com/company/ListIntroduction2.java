@@ -2,24 +2,30 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ListIntroduction2 {
   public static void main(String[] args) {
-    List<String> listA = new ArrayList<>(){
-      {
-        add("Apple");
-        add("Avocado");
-        add("Blueberries");
-        add("Durian");
-        add("Lychee");}
-    };
+    List<String> listA =
+        new ArrayList<>() {
+          {
+            add("Apple");
+            add("Avocado");
+            add("Blueberries");
+            add("Durian");
+            add("Lychee");
+          }
+        };
     List<String> listB = new ArrayList<>(listA);
     System.out.println(listA.contains("Durian"));
     listB.remove("Durian");
     listA.add(4, "Kiwifruit");
-    System.out.println("Are the two list the same size?" + (listA.size()==listB.size()));
-    
+    System.out.println("Are the two list the same size?" + (listA.size() == listB.size()));
+    System.out.println(listA.indexOf("Avocado"));
+    System.out.println(listB.indexOf("Durian"));
+    Collections.addAll(listB, "Passion Fruit", "Pomelo");
+    System.out.println(listA.get(2));
   }
 }
       //  Create a list ('List A') which contains the following values
