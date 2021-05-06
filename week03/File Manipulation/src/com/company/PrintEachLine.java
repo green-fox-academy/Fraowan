@@ -11,7 +11,9 @@ public class PrintEachLine {
     Path filePath = Paths.get("assets/my-file.txt");
     try {
       List<String> lines = Files.readAllLines(filePath);
-      System.out.println(lines);
+      System.out.println(lines.get(0));
+      System.out.println(lines.get(1));
+      System.out.println(lines.get(2));
 
     } catch (IOException e) {
       System.out.println("Unable to read file: my-file.txt");
