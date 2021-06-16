@@ -1,0 +1,26 @@
+{
+  "id": "1675ed9c-68d3-430c-812a-00aa188808c5",
+  "name": "TablesBooksProject",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://TablesBooksProject.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+}

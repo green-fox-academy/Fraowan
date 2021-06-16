@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MatrixRotate {
 
   public static void main(String[] args) {
-    int matrixSize = 3;
+    int matrixSize = 5;
 
     int[][] matrix = new int[matrixSize][matrixSize];
 
