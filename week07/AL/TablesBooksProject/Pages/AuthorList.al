@@ -48,4 +48,15 @@ page 50103 AuthorList
             }
         }
     }
+    trigger OnOpenPage()
+    var
+        MyQuery: Query ExampleQuery;
+    begin
+        if MyQuery.Open() then begin
+            while MyQuery.Read() do begin
+                Message(MyQuery.AuthorName);
+            end;
+            MyQuery.Close();
+        end;
+    end;
 }
