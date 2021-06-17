@@ -63,8 +63,13 @@ table 50100 Book
             Clustered = true;
         }
     }
+    fieldgroups
+    {
+        fieldgroup(Dropdown; Id, Title, PageCount)
+        {
 
-
+        }
+    }
 
     trigger OnInsert()
     begin

@@ -50,7 +50,8 @@ page 50103 AuthorList
     }
     trigger OnOpenPage()
     var
-        MyQuery: Query ExampleQuery;
+        //MyQuery: Query ExampleQuery;
+        Myquery: Query AggregateQuery;
     begin
         if MyQuery.Open() then begin
             while MyQuery.Read() do begin
